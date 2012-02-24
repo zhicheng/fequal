@@ -1,0 +1,28 @@
+	Float Equal Function
+
+example:
+
+=========
+#include <fequal.h>
+#include <stdio.h>
+
+int
+main(void)
+{
+	float f = 0.1;
+	float sum = 0;
+
+	int i;
+	for (i = 0; i < 10; i++)
+		sum += f;
+	printf("sum: %1.15f, f*10: %1.15f\n", sum, f*10);
+	printf("sum == f*10: %d\n", sum == f*10);
+	printf("fequal(sum, f*10): %d\n", fequal(sum, f*10));
+	return 0;
+}
+=========
+
+fequal() will work well for most case
+if not for you,just use another two function from fequal.h
+
+
